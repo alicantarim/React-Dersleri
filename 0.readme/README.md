@@ -29,3 +29,23 @@
 1- TestComponent.jsx adında dosya oluştur.
 
 2- "rfce" ile hazır bir component yapısı oluştur.
+
+## React export Mantığı
+
+1- Bir component'i dışarı olduğu gibi export etmek istiyorsak, export default "Login"; kullanılır.
+
+2- Bir component içerisinde 1 parça şeyi export etmek istiyorsak, export kullanılır. Örn: import { users } from "./Login"
+
+3- Kullanılacak yerde bu component import edilmeli
+
+\*\* import Login from "./Login" (Burada Component in ismi "Login" yerine istediğimiz bir tanımlamayı kullanabiliriz. Örn: import Example from ".Login")
+
+## React useState : hooks
+
+1- Verileri tutmak için kullandığımız hooks'tur.
+
+2- ÖRN -> const [name, setName] = useState("")
+
+** name -> Değişkene erişirken ve içindeki değeri kullanırken ki ismi
+** setName -> name içerisindeki değeri yeni bir değerle güncelleyebilmek için setName fonksiyonunun adını veriyoruz.
+\*\* useState("") -> "" burada name değişkeninin başlangıç değerini boş bir string olarak tanımlar.
