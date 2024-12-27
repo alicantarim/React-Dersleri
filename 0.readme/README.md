@@ -1,3 +1,7 @@
+# REACT ÇALIŞMALARIM
+
+React öğrenirken yapmış olduğum çalışmaları kaynak olması adına bir repo üzerinden paylaşmak istedim.
+
 ## React Projesi oluşturma
 
 1- Çalışmak istediğin klasörü oluştur. Örn: React Dersleri
@@ -38,7 +42,7 @@
 
 3- Kullanılacak yerde bu component import edilmeli
 
-\*\* import Login from "./Login" (Burada Component in ismi "Login" yerine istediğimiz bir tanımlamayı kullanabiliriz. Örn: import Example from ".Login")
+- import Login from "./Login" (Burada Component in ismi "Login" yerine istediğimiz bir tanımlamayı kullanabiliriz. Örn: import Example from ".Login")
 
 ## React useState : hooks
 
@@ -46,6 +50,6 @@
 
 2- ÖRN -> const [name, setName] = useState("")
 
-** name -> Değişkene erişirken ve içindeki değeri kullanırken ki ismi
-** setName -> name içerisindeki değeri yeni bir değerle güncelleyebilmek için setName fonksiyonunun adını veriyoruz.
-\*\* useState("") -> "" burada name değişkeninin başlangıç değerini boş bir string olarak tanımlar.
+- name -> Değişkene erişirken ve içindeki değeri kullanırken ki ismi
+- setName -> name içerisindeki değeri yeni bir değerle güncelleyebilmek için setName fonksiyonunun adını veriyoruz.
+  \*\* useState("") -> "" burada name değişkeninin başlangıç değerini boş bir string olarak tanımlar.
