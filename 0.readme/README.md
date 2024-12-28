@@ -53,3 +53,8 @@ React öğrenirken yapmış olduğum çalışmaları kaynak olması adına bir r
 - name -> Değişkene erişirken ve içindeki değeri kullanırken ki ismi
 - setName -> name içerisindeki değeri yeni bir değerle güncelleyebilmek için setName fonksiyonunun adını veriyoruz.
   \*\* useState("") -> "" burada name değişkeninin başlangıç değerini boş bir string olarak tanımlar.
+- useState: Bir state'in değerini set methodunu kullanarak değiştirdiğinde component yeniden render edilir.
+
+## React useEffect: hooks
+
+1- Bir sayfa yüklendiğinde bir şeyler yaptırmak istediğimizde kullanmamız gereken hook'tur.
