@@ -4,8 +4,12 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState(
+    "Adınızı buton ile yazabilirsiniz."
+  );
+  const [lastName, setLastName] = useState(
+    "Soyadınızı buton ile yazabilirsiniz."
+  );
 
   useEffect(() => {
     console.log("Her zaman çalışır.");
@@ -36,6 +40,10 @@ function App() {
 
   return (
     <div>
+      <div>
+        <p>{firstName}</p>
+        <p>{lastName}</p>
+      </div>
       <div>
         <button onClick={() => setFirstName("Lavinya Güneş")}>
           Adı Değiştir
