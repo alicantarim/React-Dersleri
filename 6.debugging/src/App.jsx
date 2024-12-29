@@ -26,6 +26,8 @@ function App() {
 
   return (
     <div>
+      <div>DEBUGGING İÇİN YAPILMIŞTIR.</div>
+      <br />
       <div>
         <input
           type="number"
@@ -40,6 +42,7 @@ function App() {
           onChange={(e) => setVize2(Number(e.target.value))}
         />
       </div>
+      <br />
       <div>
         <button onClick={ortalamaBul1}>Ortalama Bul</button>
       </div>
