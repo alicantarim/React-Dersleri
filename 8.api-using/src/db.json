@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "alicantarim",
+      "password": 112233,
+      "postId": 7
+    },
+    {
+      "id": 2,
+      "username": "kubratarim",
+      "password": 212121,
+      "postId": 5
+    }
+  ]
+}
