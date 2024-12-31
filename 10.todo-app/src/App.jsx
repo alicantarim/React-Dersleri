@@ -7,8 +7,11 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   const createTodo = (newTodo) => {
+    // ! debugger;
     setTodos([...todos, newTodo]);
   };
+  // ! createTodo fonksiyonuna TodoCreate componenti erişemediği için
+  // ! 21. satırda; onCreateTodo propsu ile ToDoCreate componentine geçiyoruz.
 
   console.log(todos);
 

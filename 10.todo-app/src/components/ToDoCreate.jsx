@@ -5,6 +5,7 @@ function ToDoCreate({ onCreateTodo }) {
   const [newTodo, setNewTodo] = useState("");
 
   const createTodo = () => {
+    // ! debugger;
     if (!newTodo) return; //! Eğer kullanıcı input alanını boş bırakıp ToDo Oluştur butotuna basarsa işlem yapmayacak..
     const request = {
       id: Math.floor(Math.random() * 999999999),
