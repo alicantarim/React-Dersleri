@@ -10,9 +10,12 @@ function App() {
     // ! debugger;
     setTodos([...todos, newTodo]);
   };
+
+  const removeTodo = (todoId) => {
+    setTodos([...todos.filter((todo) => todo.id !== todoId)]);
+  };
   // ! createTodo fonksiyonuna TodoCreate componenti erişemediği için
   // ! 21. satırda; onCreateTodo propsu ile ToDoCreate componentine geçiyoruz.
-
   console.log(todos);
 
   return (
@@ -20,7 +23,7 @@ function App() {
       <div className="App">
         <div className="main">
           <ToDoCreate onCreateTodo={createTodo} />
-          <TodoList todos={todos} />
+          <TodoList todos={todos} onRemoveTodo={removeTodo} />
         </div>
       </div>
     </>
