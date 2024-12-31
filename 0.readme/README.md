@@ -1,6 +1,6 @@
 # REACT ÇALIŞMALARIM
 
-React öğrenirken yapmış olduğum çalışmaları kaynak olması adına bir repo üzerinden paylaşmak istedim.
+React öğrenirken yapmış olduğum çalışmaları kaynak olması adına bir repo üzerinden paylaşmak istedim. READM.me dosyasına eğitimde aldığım notları ekledim.
 
 ## React Projesi oluşturma
 
@@ -34,7 +34,7 @@ React öğrenirken yapmış olduğum çalışmaları kaynak olması adına bir r
 
 2- "rfce" ile hazır bir component yapısı oluştur.
 
-## React export Mantığı
+## React Export Mantığı
 
 1- Bir component'i dışarı olduğu gibi export etmek istiyorsak, export default "Login"; kullanılır.
 
@@ -58,3 +58,7 @@ React öğrenirken yapmış olduğum çalışmaları kaynak olması adına bir r
 ## React useEffect: hooks
 
 1- Bir sayfa yüklendiğinde bir şeyler yaptırmak istediğimizde kullanmamız gereken hook'tur.
+
+## ToDoList App
+
+### Child'dan Parent a Props geçme çalışması
