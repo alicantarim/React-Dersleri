@@ -3,6 +3,9 @@ import "../App.css";
 import { useState } from "react";
 function ToDoCreate({ onCreateTodo }) {
   const [newTodo, setNewTodo] = useState("");
+  const clearInput = () => {
+    setNewTodo("");
+  };
 
   const createTodo = () => {
     // ! debugger;
@@ -12,6 +15,7 @@ function ToDoCreate({ onCreateTodo }) {
       content: newTodo,
     };
     onCreateTodo(request);
+    clearInput();
   };
 
   return (
