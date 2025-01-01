@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosRemoveCircle } from "react-icons/io";
-import { FaEdit } from "react-icons/fa";
+import { FaEdit, FaCheck } from "react-icons/fa";
 import "../App.css";
 
 function Todo({ todo, onRemoveTodo }) {
   const { id, content } = todo;
 
+  const [editable, setEditable] = useState(false);
+  const [newTodo, setNewTodo] = useState(content);
+
   const removeTodo = () => {
     onRemoveTodo(id);
   };
+
+  const updateTodo = () => {};
 
   return (
     <div
@@ -23,10 +28,26 @@ function Todo({ todo, onRemoveTodo }) {
         fontFamily: "arial",
       }}
     >
-      <div>{content}</div>
+      <div>
+        {editable ? (
+          <input
+            value={newTodo}
+            onChange={(e) => setNewTodo(e.target.value)}
+            style={{ width: "380px" }}
+            className="todo-input"
+            type="text"
+          />
+        ) : (
+          content
+        )}
+      </div>
       <div>
         <IoIosRemoveCircle className="todo-icons" onClick={removeTodo} />
-        <FaEdit className="todo-icons" />
+        {editable ? (
+          <FaCheck className="todo-icons" onChange={updateTodo} />
+        ) : (
+          <FaEdit className="todo-icons" onClick={() => setEditable(true)} />
+        )}
       </div>
     </div>
   );
