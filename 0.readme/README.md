@@ -62,3 +62,5 @@ React öğrenirken yapmış olduğum çalışmaları kaynak olması adına bir r
 ## ToDoList App
 
 ### Child'dan Parent a Props geçme çalışması
+
+## Redux ToolKit (Section-11)
