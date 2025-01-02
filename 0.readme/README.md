@@ -64,3 +64,23 @@ React öğrenirken yapmış olduğum çalışmaları kaynak olması adına bir r
 ### Child'dan Parent a Props geçme çalışması
 
 ## Redux ToolKit (Section-11)
+
+### Kurulumların Yapılması
+
+1- npm install @reduxjs/toolkit
+2- npm install react-redux
+3- src altında -> redux adında folder oluşturulur.
+4- Redux içerisine store.jsx adında component açılır.
+5- Redux ToolKit sayfasında QuickStart'tan store.js içerisini projeye ekle.
+6- main.jsx içerisinde
+
+- import { Provider } from "react-redux"
+- import { store } from "./redux/store.jsx"
+- İçerde bulunan App componentini <Provider store={store} > </Provider> ile sarmalıyoruz.
+
+\*\* Bunu yapmamızın sebebi App componentimiz ReduxToolkit içinde tanımlamış olduğumuz her şeye erişebilmesi için yapıyoruz.
+
+7- Slice oluşturmalıyız.
+
+- redux folder altına -> counterSlice.jsx dosyası eklenir.
+- Redux ToolKit sayfasında QuickStart'tan Create a Redux State Slice başlığı içerisindeki JS kodunu projeye ekle.
