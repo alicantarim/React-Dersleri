@@ -68,10 +68,15 @@ React öğrenirken yapmış olduğum çalışmaları kaynak olması adına bir r
 ### Kurulumların Yapılması
 
 1- npm install @reduxjs/toolkit
+
 2- npm install react-redux
+
 3- src altında -> redux adında folder oluşturulur.
+
 4- Redux içerisine store.jsx adında component açılır.
+
 5- Redux ToolKit sayfasında QuickStart'tan store.js içerisini projeye ekle.
+
 6- main.jsx içerisinde
 
 - import { Provider } from "react-redux"
